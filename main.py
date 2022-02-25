@@ -27,7 +27,7 @@ elif user_age > 100:
 
 print("\nВаше имя со 2-й до предпоследней буквы: " + user_name[1:-1] + ".")
 print("Ваше имя наоборот))) : " + user_name[::-1] + ".")
-print("Ваше имя с последними тремя буквами: " + user_name[-3:] + ".")
+print("Ваше имя с последними 3-мя буквами: " + user_name[-3:] + ".")
 print("Ваше имя с первыми 5-ю буквами: " + user_name[:5] + ".")
 
 print("\nДлина имени составляет", len(user_name), "букв(ы).")
@@ -52,7 +52,7 @@ user_name = user_name.title()                                    # вернем/
 if user_age < 0 or user_age > 150:
     raise Exception("\nВы ввели запредельный возраст")           # ошибку выдает в начале
 elif user_name.isspace():
-    raise Exception("\nПробел присутствует")
+    raise Exception("\nПрисутствует пробел")
 
 task = int(input("\nРешите задачу: 199-11**2*15 ... "))          #  1616
 if task == 1616:
