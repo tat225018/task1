@@ -48,11 +48,12 @@ print("Имя с заглавной буквы: " + user_name)
 print("Имя с маленькой буквы: " + user_name.swapcase())
 user_name = user_name.title()                                    # вернем/сделаем имя красивым
 
-# try:
+if " " in user_name:
+    raise Exception("В Вашем имени присутствует пробел")
+    
 if user_age < 0 or user_age > 150:
     raise Exception("\nВы ввели запредельный возраст")           # ошибку выдает в начале
-elif user_name.isspace():
-    raise Exception("\nПрисутствует пробел")
+
 
 task = int(input("\nРешите задачу: 199-11**2*15 ... "))          #  1616
 if task == 1616:
